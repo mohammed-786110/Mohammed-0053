@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - RideBuddy</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Admin.css">
+</head>
+<body>
+
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-shield-alt"></i>
+                RideonRent 
+            </div>
+            <ul class="nav-links">
+                <li><a href="../Home/Home.html" class="active">Home</a></li>
+                <li><a href="../ShowCase/ShowCase.html">Vehicles</a></li>
+                <li><a href="../Admin/Admin.html">Admin</a></li>
+              
+            </ul>
+            <div class="admin-badge">
+                <i class="fas fa-user-shield"></i>
+                Admin
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div id="Header">
+            <div class="header-content">
+                <h1>
+                    <i class="fas fa-plus-circle"></i>
+                    Vehicle Management
+                </h1>
+                <p>Add new vehicles to the RideBuddy platform and manage your inventory</p>
+            </div>
+        </div>
+
+        <div class="stats-grid" style="max-width: 1200px; margin: 0 auto; padding: 0 2rem; margin-bottom: 2rem;">
+            <div class="stat-card">
+                <div class="stat-number">247</div>
+                <div class="stat-label">Total Vehicles</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">38</div>
+                <div class="stat-label">Pending Approval</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">152</div>
+                <div class="stat-label">Active Bookings</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">95%</div>
+                <div class="stat-label">Occupancy Rate</div>
+            </div>
+        </div>
+
+        <div id="FormSection">
+            <div class="form-container">
+                <div class="form-header">
+                    <h2>Add New Vehicle</h2>
+                    <p>Fill in the details below to add a new vehicle to the platform</p>
+                </div>
+
+                
+
+                <form id="vehicleForm">
+                    <div>
+                        <label for="poster">Vehicle Image</label>
+                        <div class="file-upload">
+                            <input type="url" id="poster">
+                            
+                        </div>
+                    </div>
+
+                    <div>
+                        <div>
+                            <label>Vehicle Model</label>
+                            <div>
+                
+                                <input type="text" placeholder="e.g., BMW M3" required>
+                            </div>
+                        </div>
+                        <div>
+                            <label>Brand</label>
+                            <div >
+                                
+                                <input type="text" id="brand" placeholder="e.g., BMW" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div >
+                            <label>Mileage (km/l)</label>
+                            <div>
+                               
+                                <input type="number" placeholder="e.g., 15" step="0.1" min="0" required>
+                            </div>
+                        </div>
+                        <div>
+                            <label>Max Speed (km/h)</label>
+                            <div>
+                                
+                                <input type="number" placeholder="e.g., 250" min="0" required>
+                            </div>
+                        </div>
+                    </div>
+                     <div>
+                        <button type="submit">
+                            
+                            Add Vehicle
+                        </button>
+                        <button type="button">
+                           
+                            Reset Form
+                        </button>
+                        <button>
+                            
+                            Cancel
+                        </button>
+                    </div>
+                </form>
+
+
+            </div>
+        </div>
+    </main>
+    
+    
+    <section>
+        
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Model</th>
+                    <th>Brand</th>
+                    <th>Picture</th>
+                    <th>Delete</th>
+                    <th>Update</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+
+            </tbody>
+        </table>
+
+    </section>
+    
+
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="../Admin/Admin.js"></script>
+</html>
