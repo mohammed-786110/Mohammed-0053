@@ -299,7 +299,7 @@ main {
     height: 250px;
     overflow: hidden;
     position: relative;
-    background: linear-gradient(45deg, #667eea, #764ba2);
+    background: linear-gradient(45deg, #667eea, #b988ea);
 }
 
 .card img {
@@ -358,10 +358,10 @@ main {
 
 .spec-tag:hover {
     background: var(--secondary-gradient);
-    color: white;
+    color: rgb(255, 255, 255);
     transform: translateY(-2px);
 }
-
+ 
 .card-content button {
     width: 100%;
     background: var(--secondary-gradient);
